@@ -14,8 +14,7 @@ $(document).ready(function(){
 		var synPos = $("body").html().toLowerCase().indexOf(" " + syno + " ");
 		if (synPos !== -1){
 			var ED = 1 + Math.floor(Math.random() * bigList[i].length-1);
-			$("body").html($("body").html().replace($('body').html().substr(synPos + 1,syno.length),bigList[i][ED]));
-	
+			$("body").html($("body").html().replace($('body').html().substr(synPos + 1,syno.length),"<span data-tooltip class='has-tip' title=" + syno + ">" + bigList[i][ED] + "</span>"));
 		}
 	}
 
