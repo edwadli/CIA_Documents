@@ -10,10 +10,10 @@ $(document).ready(function(){
 		console.log("x");
 		var syno = bigList[i][0];
 		var synPos = $("body").text().toLowerCase().indexOf(" " + syno + " ");
-		console.log($("body").text().substr(synPos, syno.length + 2));
+		//console.log($("body").text().substr(synPos, syno.length + 2));
 		if (synPos !== -1 ){
 			var ED = 1 + Math.floor(Math.random() * (bigList[i].length-1));
-			$("body").html($("body").html().replace($('body').text().substr(synPos,syno.length + 2),"<span data-tooltip class='has-tip' title=" + syno + "> " + bigList[i][ED] + " </span>"));
+			$("body").html($("body").html().replace($('body').text().substr(synPos,syno.length + 2),"<span data-tooltip class='has-tip' data-width='300' title=" + syno + "> " + bigList[i][ED] + " </span>"));
 		}
 	}
 /*	//
