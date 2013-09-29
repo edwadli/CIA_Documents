@@ -11,6 +11,7 @@
   /*
   "browser_action": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "default_icon": "icon.png"
   }
 =======
@@ -21,4 +22,12 @@
     "http:/words.bighugelabs.com/"
   ]
 >>>>>>> 3388a5b52dbdd5dd7231a571bb0d630c3ee6c98a
+=======
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://secure.flickr.com/"
+  ]
+>>>>>>> parent of 09719cd... everything got deleted
 }
