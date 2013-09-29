@@ -26,13 +26,13 @@ var getWSL = function(QUERY){
 	if (count !== 0 && count === WSL.length)
 		WSL.sort();
 		addtoWSL(WSL, QUERY);
-		console.log(WSL.toString());
+		//console.log(WSL.toString());
 		mergeSynList(WSL);
 	});
 };
 
 var convertDIC = function(){
-	$.each(samplelist, function(i, item){
+	$.each(wordlist, function(i, item){
 		getWSL(item);
 	});
 }
