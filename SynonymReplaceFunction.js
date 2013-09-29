@@ -11,8 +11,7 @@ $(document).ready(function(){
 	$("body").text(
 		$(this).text().replace(
 			$("body").text().substr(synPos,syno.length),
-								bigList[i][Math.floor(
-									Math.random()*bigList[i].length)]
+									bigList[i][random(#SATwords)]
 									)
 		);
 
