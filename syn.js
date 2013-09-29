@@ -32,8 +32,11 @@ var getWSL = function(QUERY){
 };
 
 var convertDIC = function(){
-	$.each(wordlist, function(i, item){
+	var counter = 0;
+	$.each(samplelist, function(i, item){
 		getWSL(item);
+		counter++;
+		if (counter === samplelist.length){printBigList();}
 	});
 }
 
