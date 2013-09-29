@@ -1,33 +1,22 @@
 {
-  "manifest_version": 2,
+    "manifest_version": 2,
+    "name" : "A simple Found Text Demo",
+    "description" : "Bla",
+    "version" : "1.0",
+    "background" : {
+        "scripts" : ["background.js"]
+    },
+    "permissions" : ["activeTab", "tabs", "*://*/*"
+    ],
+    //"page_action" : {
+    //    "default_icon" : "icon.png"
+    //},
 
-  "name": "Search and Destroy: Vocabulary",
-  "description": "This extension replaces words on a page with vocabulary words.",
-  "version": "1.0",
-
-  "background": {
-  "page": "masterFile.html"
-  },
-  /*
-  "browser_action": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "default_icon": "icon.png"
-  }
-=======
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },*/
-  "permissions": [
-    "http:/words.bighugelabs.com/"
-  ]
->>>>>>> 3388a5b52dbdd5dd7231a571bb0d630c3ee6c98a
-=======
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "https://secure.flickr.com/"
-  ]
->>>>>>> parent of 09719cd... everything got deleted
+    "content_scripts" : [{
+        "matches" : ["*://*/*"],
+        "css": ["foundation.css", "foundation.min.css", "normalize.css"],
+        "js" : ["jquery-1.10.2.min.js","foundation.js", "foundation.tooltips.js", "wordlist.js","HTMLSynonymReplaceFunction.js"],
+        "run_at": "document_end",
+        "web_accessible_resources": ["HTMLSynonymReplaceFunction.js"]
+    }]
 }
