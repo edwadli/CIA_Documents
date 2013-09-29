@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	$("body").text(
 		$(this).text().replace(
-			$(this).text().substr(synPos,syno.length+synPos),
+			$("body").text().substr(synPos,syno.length),
 									bigList[i][random(#SATwords)]
 									)
 		);
