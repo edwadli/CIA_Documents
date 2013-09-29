@@ -5,9 +5,6 @@
   "description": "This extension replaces words on the page with SAT words.",
   "version": "1.0",
 
-  "background": {
-  "page": "background.html"
-  },
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
