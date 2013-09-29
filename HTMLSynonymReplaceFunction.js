@@ -9,13 +9,14 @@ $(document).ready(function(){
 	//
 
 	for(var i = 0;i<bigList.length;i++){
-		console.log("x");
 		var syno = bigList[i][0];
 		var synPos = $("body").html().toLowerCase().indexOf(" " + syno + " ");
 		if (synPos !== -1){
-			var ED = 1 + Math.floor(Math.random() * bigList[i].length-1);
-			$("body").html($("body").html().replace($('body').html().substr(synPos + 1,syno.length),bigList[i][ED]));
-	
+			var ED = Math.floor(1 + Math.random() * bigList[i].length-1);
+			console.log(bigList[i].length + syno + ": " + bigList[i][ED]);
+			if(bigList[i][ED]!==syno){
+				$("body").html($("body").html().replace($('body').html().substr(synPos + 1,syno.length),bigList[i][ED]));
+			}
 		}
 	}
 
