@@ -2,13 +2,23 @@
   "manifest_version": 2,
 
   "name": "Search and Destroy: Vocabulary",
-  "description": "This extension replaces words on the page with SAT words.",
+  "description": "This extension replaces words on a page with vocabulary words.",
   "version": "1.0",
 
   "background": {
   "page": "masterFile.html"
   },
+  /*
   "browser_action": {
+<<<<<<< HEAD
     "default_icon": "icon.png"
   }
+=======
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },*/
+  "permissions": [
+    "http:/words.bighugelabs.com/"
+  ]
+>>>>>>> 3388a5b52dbdd5dd7231a571bb0d630c3ee6c98a
 }
