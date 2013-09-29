@@ -57,7 +57,7 @@ var mergeSynList = function(WSLarr)
         }
         //append rest of list on cuz one list ran out
         if (tempPoint<tempBig.length){
-            for(;tempPoint<tempBig.length;syn++,temp++){
+            for(;tempPoint<tempBig.length;syn++,tempPoint++){
                 bigList[syn] = tempBig[tempPoint];
             }
         }
