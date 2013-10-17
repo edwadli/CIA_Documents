@@ -22,7 +22,7 @@ $(document).ready(function(){
 		if (synPos !== -1 ){
 			var ED = 1 + Math.floor(Math.random() * (bigList[i].length-1));
 			
-			var regex = new RegExp(syno, "i");
+			var regex = new RegExp(" " + syno + " ", "i");
 			page = 
 				page.replace(
 					//page.substr(synPos,syno.length + 2),
