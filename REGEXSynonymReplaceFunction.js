@@ -9,7 +9,6 @@ var bigList = vocabList;
 $(document).ready(function(){
 	
 	var page = $("body").html();
-	var newPage = page;
 
 	//var i = 0;
 	var i = Math.floor(Math.random()*10);
@@ -24,19 +23,19 @@ $(document).ready(function(){
 			var ED = 1 + Math.floor(Math.random() * (bigList[i].length-1));
 			
 			var regex = new RegExp(syno, "i");
-			newPage = 
+			page = 
 				page.replace(
 					//page.substr(synPos,syno.length + 2),
 					regex,
 					"<span data-tooltip class='has-tip' data-width='300' title=" + syno + "> " + bigList[i][ED] + " </span>"
 				);
-			page = newPage;
+			
 			console.log(syno,bigList[i][ED]);
 		
 		}
 	}
 
-	$("body").html(newPage);
+	$("body").html(page);
 
 
 });
