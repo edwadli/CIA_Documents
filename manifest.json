@@ -15,8 +15,8 @@
     "content_scripts" : [{
         "matches" : ["*://*/*"],
         "css": ["foundation.css", "normalize.css"],
-        "js" : ["jquery-1.10.2.min.js","foundation.js", "foundation.tooltips.js", "wordlist.js","HTMLSynonymReplaceFunction.js"],
+        "js" : ["jquery-1.10.2.min.js","foundation.js", "foundation.tooltips.js", "wordlist.js","REGEXSynonymReplaceFunction.js"],
         "run_at": "document_end",
-        "web_accessible_resources": ["HTMLSynonymReplaceFunction.js"]
+        "web_accessible_resources": ["REGEXSynonymReplaceFunction.js"]
     }]
 }
